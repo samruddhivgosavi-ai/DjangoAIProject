@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero-section text-center">
+
+    <h1 class="display-4 fw-bold">
+
+        Welcome to SkillVerse AI
+
+    </h1>
+
+    <p class="lead mt-4">
+
+        AI Career Guidance & Prediction Platform
+
+    </p>
+
+   <a href="/roadmaps/"
+   class="btn btn-primary btn-lg mt-3">
+       
+       Explore Careers
+       
+
+</a>
+
+</div>
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">
+            Platform Features
+        </h2>
+
+        <p class="text-muted">
+            Smart tools to improve your career journey.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card feature-card shadow h-100">
+                <div class="card-body text-center">
+                    <h3>
+                        Predict Career
+                    </h3>
+
+                    <p class="mt-3">
+                        Get smart career suggestions based on your interests and goals.
+                    </p>
+
+                    <a href="/predict-career" class="btn btn-outline-primary">
+
+                        Explore
+
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="col-md-4 mb-4">
+            <div class="card feature-card shadow h-100">
+                <div class="card-body text-center">
+                    <h3>
+                        Analyze Resume
+                    </h3>
+
+                    <p class="mt-3">
+                        Analyze resume strengths and identify improvement areas.
+                    </p>
+
+                    <a href="/analyze-resume/" class="btn btn-outline-primary">
+                        Open
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card feature-card shadow h-100">
+                <div class="card-body text-center">
+                    <h3>
+                        Start Assessment
+                    </h3>
+
+                    <p class="mt-3">
+                        Check your current skills and discover improvement areas.
+                    </p>
+
+                    <a href="/start-assessment/" class="btn btn-outline-primary">
+                        Practice
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

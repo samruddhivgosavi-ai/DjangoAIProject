@@ -1,0 +1,97 @@
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            SkillVerse AI
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- Left Side Menu -->
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/study-planner/">
+                        Study Planner
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/interview-questions/">
+                        Interview Questions
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/resources/">
+                        Resources
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Right Side Profile -->
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
+
+                        <i class="bi bi-person-circle"></i>
+
+                        {% if user.is_authenticated %}
+                            {{user.username}}
+                        {% endif %}
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                        <li>
+                            <a class="dropdown-item" href="/login/">
+                                Login
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="/signup/">
+                                Signup
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="/logout/">
+                                Logout
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>

@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+<div class="text-center mb-5">
+
+    <h1 class="fw-bold">
+        Resume Analyzer
+    </h1>
+
+    <p class="feature-subtitle">
+        Analyze your resume and get improvement suggestions.
+    </p>
+
+</div>
+
+<div class="card shadow p-4">
+
+    <form method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <label class="form-label fw-bold">
+            Upload Resume (PDF)
+        </label>
+
+        <input
+            type="file"
+            name="resume"
+            class="form-control"
+            accept=".pdf"
+            required>
+
+        <button
+            type="submit"
+            class="btn btn-primary mt-4 w-100">
+
+            Analyze Resume
+
+        </button>
+
+    </form>
+
+</div>
+
+{% if skills %}
+
+<div class="card shadow p-4 mt-5">
+
+    <h2>
+        Resume Analysis
+    </h2>
+
+    <hr>
+
+    <h4>
+        Resume Score: {{ score }}/100
+    </h4>
+
+    <br>
+
+    <h4>
+        Detected Skills:
+    </h4>
+
+    <ul>
+
+        {% for skill in skills %}
+
+        <li>{{ skill }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+    <h4>
+        Skills Recommended to Learn:
+
+    </h4>
+
+    <ul>
+        {% for skill in missing_skills %}
+
+            <li>{{skill}}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,343 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+
+            Interview Questions
+
+        </h1>
+
+        <p class="text-muted mt-3">
+
+            Practice important technical interview questions.
+
+        </p>
+
+    </div>
+
+    <div class="accordion mb-4" id="pythonAccordion">
+
+        <h3 class="mb-3">
+
+            Python Questions
+
+        </h3>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#python1"
+                >
+
+                    What is Python?
+
+                </button>
+
+            </h2>
+
+            <div
+                id="python1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#pythonAccordion"
+            >
+
+                <div class="accordion-body">
+
+                    Python is a high-level interpreted programming language.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#python2"
+                >
+
+                    What is OOPs?
+
+                </button>
+
+            </h2>
+
+            <div
+                id="python2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#pythonAccordion"
+            >
+
+                <div class="accordion-body">
+
+                    OOPs stands for Object Oriented Programming System.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button 
+                   class="accordion-button collapsed"
+                   type="button"
+                   data-bs-toggle="collapse"
+                   data-bs-target="#python3">
+                     
+                   What is the difference between global and local scope?
+                
+                </button>
+            </h2>
+
+            <div 
+               id="python3"
+               class="accordion-collapse collapse"
+               data-bs-parent="#pythonAccordion">
+
+               <div class="accordion-body">
+              
+                A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+                A variable created in the main body of the Python code is a global variable and belongs to the global scope. Global variables are available from within any scope, global and local.
+
+               </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button 
+                     class="accordion-button collapsed"
+                     type="button"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#python4">
+                         
+                        What is an iterator in Python?
+                    
+                    </button>
+            </h2>
+
+            <div 
+                id="python4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#pythonAccordion">
+
+                <div class="accordion-body">
+
+                 An iterator is an object that contains a countable number of values.
+                 An iterator is an object that can be iterated upon, meaning that you can traverse through all the values.
+                 Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods __iter__() and __next__().
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button 
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#python5">
+                    
+                      Why should you use lambda function in Python?
+                    
+                    </button>
+            </h2>
+
+            <div 
+               id="python5"
+               class="accordion-collapse collapse"
+               data-bs-parent="#pythonAccordion">
+               
+               <div class="accordion-body">
+              
+                Use lambda functions when an anonymous function is required for a short period of time.
+
+               </div>
+            
+            </div>
+        </div>
+
+    </div>
+
+    <div class="accordion mb-4" id="sqlAccordion">
+
+        <h3 class="mb-3">
+
+            SQL Questions
+
+        </h3>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sql1"
+                >
+
+                    What is SQL?
+
+                </button>
+
+            </h2>
+
+            <div
+                id="sql1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sqlAccordion"
+            >
+
+                <div class="accordion-body">
+
+                    SQL is used to manage and query databases.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sql2"
+                >
+
+                    What is JOIN in SQL?
+
+                </button>
+
+            </h2>
+
+            <div
+                id="sql2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sqlAccordion"
+            >
+
+                <div class="accordion-body">
+
+                    JOIN is used to combine records from multiple tables.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button 
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#sql3">
+                       
+                      What is RDBMS? How it is different from DBMS?
+                    
+                    </button>
+            </h2>
+
+            <div 
+               id="sql3"
+               class="accordion-collapse collapse"
+               data-bs-parent="#sqlAccordion">
+             
+               <div class="accordion-body">
+                
+                RDBMS stands for Relational Database Management System. The key difference here, compared to DBMS, is that RDBMS stores data in the form of a collection of tables, and relations can be defined between the common fields of these tables. Most modern database management systems like MySQL, Microsoft SQL Server, Oracle, IBM DB2, and Amazon Redshift are based on RDBMS.
+
+               </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button 
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sql4">
+                
+                    What is Database?
+                
+                </button>
+            </h2>
+
+            <div 
+                id="sql4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sqlAccordion">
+            
+                <div class="accordion-body">
+
+                    A database is an organized collection of data, stored and retrieved digitally from a remote or local computer system. Databases can be vast and complex, and such databases are developed using fixed design and modeling approaches.
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button 
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#sql5">
+                    
+                      What is the SELECT statement?
+                    
+                    </button>
+            </h2>
+
+            <div 
+               id="sql5"
+               class="accordion-collapse collapse"
+               data-bs-parent="#sqlAccordion">
+            
+               <div class="accordion-body">
+                
+                SELECT operator in SQL is used to select data from a database. The data returned is stored in a result table, called the result-set.
+
+                <div class="sql-query-box">
+                    <pre><code>SELECT * FROM myDBstudents;</code></pre>
+                </div>
+                
+               
+            </div>
+            
+            
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

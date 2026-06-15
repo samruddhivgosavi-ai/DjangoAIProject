@@ -1,0 +1,160 @@
+body {
+    background: linear-gradient(135deg,#0f2027,#182b35,#203a43);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(135deg,#0f2027,#182b35,#203a43);
+
+    background-attachment: fixed;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.home p {
+    color: black;
+}
+
+.lead {
+    color: #e5e7eb;
+}
+
+h2 {
+    color: white;
+}
+
+.btn-primary {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.hero-section {
+    margin-top: 100px;
+}
+
+.custom-navbar,
+.navbar {
+    background: transparent !important;
+    box-shadow: none;
+
+}
+
+.feature-card {
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3,
+.feature-card p {
+    color: black !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+    color: white;
+}
+
+.navbar-brand,
+.nav-link,
+.nav-link-active {
+    color: white !important;
+}
+
+#plan-box {
+
+    border-radius: 15px;
+}
+
+.card h3, h4, h5 {
+
+    border-radius: 15px;
+    color: black !important;
+}
+
+.accordion-item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.sql-query-box {
+    background-color: hsl(220, 10%, 95%);
+    border-left: 2px solid white;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow-x: auto;
+}
+
+.sql-query-box pre {
+    margin: 0;
+    padding: 0px;
+    color: #0d0c0c;
+    font-size: 15px;
+    font-family: Consolas,monospace;
+    white-space: pre-wrap;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.roadmap-card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.roadmap-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+p.text-muted {
+    color: white !important;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.resources-card p{
+    color: black;
+}
+
+.card {
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translate(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

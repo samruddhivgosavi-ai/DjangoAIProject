@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+            Skill Assessment Test 1
+        </h1>
+
+        <p>
+            Test your knowledge and improve your skills.
+        </p>
+
+    </div>
+
+    <div class="card shadow p-4">
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <h4>
+                1. Which keyword is used to define a function in Python?
+            </h4>
+
+            <input type="radio" name="q1" value="A"> function <br>
+            <input type="radio" name="q1" value="B"> define <br>
+            <input type="radio" name="q1" value="C"> def <br>
+            <input type="radio" name="q1" value="D"> func <br>
+
+            <hr>
+
+            <h4>
+                2. Which SQL command is used to retrieve data?
+            </h4>
+
+            <input type="radio" name="q2" value="A"> INSERT <br>
+            <input type="radio" name="q2" value="B"> UPDATE <br>
+            <input type="radio" name="q2" value="C"> SELECT <br>
+            <input type="radio" name="q2" value="D"> DELETE <br>
+
+            <hr>
+
+            <h4>
+                3. Which HTML tag creates a hyperlink?
+            </h4>
+
+            <input type="radio" name="q3" value="A"> p <br>
+            <input type="radio" name="q3" value="B"> a <br>
+            <input type="radio" name="q3" value="C"> h1 <br>
+            <input type="radio" name="q3" value="D"> div <br>
+
+            <hr>
+
+            <h4>
+                4. Which CSS property changes text color?
+            </h4>
+
+            <input type="radio" name="q4" value="A"> font <br>
+            <input type="radio" name="q4" value="B"> background <br>
+            <input type="radio" name="q4" value="C"> color <br>
+            <input type="radio" name="q4" value="D"> style <br>
+
+            <hr>
+
+            <h4>
+                5. Django follows which architecture?
+            </h4>
+
+            <input type="radio" name="q5" value="A"> MVC <br>
+            <input type="radio" name="q5" value="B"> MVT <br>
+            <input type="radio" name="q5" value="C"> MVVM <br>
+            <input type="radio" name="q5" value="D"> Layered <br>
+
+            <br>
+
+            <button
+                type="submit"
+                class="btn btn-primary w-100">
+
+                Submit Assessment
+
+            </button>
+
+        </form>
+
+    </div>
+
+    {% if score is not None %}
+
+    <div class="card shadow p-4 mt-5">
+
+        <h2>
+            Assessment Result
+        </h2>
+
+        <h4>
+            Your Score: {{ score }}/5
+        </h4>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}
